@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "26b798af-2445-4a29-b6ec-a1310bd5e00e",
+		"name": "Target_API_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30192464"
+	},
+	"item": [
+		{
+			"name": "planet id 40",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/40",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"40"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 15:58:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"0238d895286c66882687eddd9e4c196e\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Troiken\",\n    \"rotation_period\": \"unknown\",\n    \"orbital_period\": \"unknown\",\n    \"diameter\": \"unknown\",\n    \"climate\": \"unknown\",\n    \"gravity\": \"unknown\",\n    \"terrain\": \"desert, tundra, rainforests, mountains\",\n    \"surface_water\": \"unknown\",\n    \"population\": \"unknown\",\n    \"residents\": [\n        \"https://swapi.dev/api/people/49/\"\n    ],\n    \"films\": [],\n    \"created\": \"2014-12-20T10:01:37.395000Z\",\n    \"edited\": \"2014-12-20T20:58:18.487000Z\",\n    \"url\": \"https://swapi.dev/api/planets/40/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "people id 19",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/19",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								"19"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 15:56:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"3289f36de0b278c5e251a39e7bf7ae2a\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Jek Tono Porkins\",\n    \"height\": \"180\",\n    \"mass\": \"110\",\n    \"hair_color\": \"brown\",\n    \"skin_color\": \"fair\",\n    \"eye_color\": \"blue\",\n    \"birth_year\": \"unknown\",\n    \"gender\": \"male\",\n    \"homeworld\": \"https://swapi.dev/api/planets/26/\",\n    \"films\": [\n        \"https://swapi.dev/api/films/1/\"\n    ],\n    \"species\": [],\n    \"vehicles\": [],\n    \"starships\": [\n        \"https://swapi.dev/api/starships/12/\"\n    ],\n    \"created\": \"2014-12-12T11:16:56.569000Z\",\n    \"edited\": \"2014-12-20T21:17:50.343000Z\",\n    \"url\": \"https://swapi.dev/api/people/19/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "starship id 17",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/starships/17",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"starships",
+								"17"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:09:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"a15d07abd34661d2327716da18323cb2\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Rebel transport\",\n    \"model\": \"GR-75 medium transport\",\n    \"manufacturer\": \"Gallofree Yards, Inc.\",\n    \"cost_in_credits\": \"unknown\",\n    \"length\": \"90\",\n    \"max_atmosphering_speed\": \"650\",\n    \"crew\": \"6\",\n    \"passengers\": \"90\",\n    \"cargo_capacity\": \"19000000\",\n    \"consumables\": \"6 months\",\n    \"hyperdrive_rating\": \"4.0\",\n    \"MGLT\": \"20\",\n    \"starship_class\": \"Medium transport\",\n    \"pilots\": [],\n    \"films\": [\n        \"https://swapi.dev/api/films/2/\",\n        \"https://swapi.dev/api/films/3/\"\n    ],\n    \"created\": \"2014-12-15T12:34:52.264000Z\",\n    \"edited\": \"2014-12-20T21:23:49.895000Z\",\n    \"url\": \"https://swapi.dev/api/starships/17/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "vehicle id 30",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/vehicles/30",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"30"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:03:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"185645203ec7ab693e6117f7b03771a7\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Imperial Speeder Bike\",\n    \"model\": \"74-Z speeder bike\",\n    \"manufacturer\": \"Aratech Repulsor Company\",\n    \"cost_in_credits\": \"8000\",\n    \"length\": \"3\",\n    \"max_atmosphering_speed\": \"360\",\n    \"crew\": \"1\",\n    \"passengers\": \"1\",\n    \"cargo_capacity\": \"4\",\n    \"consumables\": \"1 day\",\n    \"vehicle_class\": \"speeder\",\n    \"pilots\": [\n        \"https://swapi.dev/api/people/1/\",\n        \"https://swapi.dev/api/people/5/\"\n    ],\n    \"films\": [\n        \"https://swapi.dev/api/films/3/\"\n    ],\n    \"created\": \"2014-12-18T11:20:04.625000Z\",\n    \"edited\": \"2014-12-20T21:30:21.693000Z\",\n    \"url\": \"https://swapi.dev/api/vehicles/30/\"\n}"
+				}
+			]
+		},
+		{
+			"name": "species id 9",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/species/9",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"species",
+								"9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.16.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:00:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "ETag",
+							"value": "\"f7270f857c2050c1d64e30d2fe80333c\""
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15768000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Ewok\",\n    \"classification\": \"mammal\",\n    \"designation\": \"sentient\",\n    \"average_height\": \"100\",\n    \"skin_colors\": \"brown\",\n    \"hair_colors\": \"white, brown, black\",\n    \"eye_colors\": \"orange, brown\",\n    \"average_lifespan\": \"unknown\",\n    \"homeworld\": \"https://swapi.dev/api/planets/7/\",\n    \"language\": \"Ewokese\",\n    \"people\": [\n        \"https://swapi.dev/api/people/30/\"\n    ],\n    \"films\": [\n        \"https://swapi.dev/api/films/3/\"\n    ],\n    \"created\": \"2014-12-18T11:22:00.285000Z\",\n    \"edited\": \"2014-12-20T21:36:42.155000Z\",\n    \"url\": \"https://swapi.dev/api/species/9/\"\n}"
+				}
+			]
+		}
+	]
+}

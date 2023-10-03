@@ -1,0 +1,669 @@
+{
+	"info": {
+		"_postman_id": "4d9f2f7a-0b3b-4f4c-ae01-112f323b0afa",
+		"name": "Target_API_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30192464"
+	},
+	"item": [
+		{
+			"name": "NewsAPI-News Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=postman&from=2023-10-01&sortBy=popularity&apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "postman"
+						},
+						{
+							"key": "from",
+							"value": "2023-10-01"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=postman&from=2023-10-01&sortBy=popularity&apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "postman"
+								},
+								{
+									"key": "from",
+									"value": "2023-10-01"
+								},
+								{
+									"key": "sortBy",
+									"value": "popularity"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:13:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Cached-Result",
+							"value": "false"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=GegB2ETIkmrTYG5CiY79pZnBD0TphOeEQ2mA60Fk2FKvPbU1tVI8zUxbPBPLcJ92aQrKSmM1Ao3vCyKEHDZglDFGPXcnM5ZChsmAuEkko6ZdHNhtVbamYpqQ3iNy\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "81067865b963406d-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 8,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"BBC News\"\n            },\n            \"author\": \"BBC\",\n            \"title\": \"That Time David Hockney Was Hitchhiking\",\n            \"description\": \"It was 1955, and he and a buddy were soaked to the skin when a couple sheltered, dried, and fed them. He later sent them a ceramic depiction of their black and white cat. – BBC\",\n            \"url\": \"https://www.bbc.com/news/uk-england-leeds-66961020\",\n            \"urlToImage\": \"https://ichef.bbci.co.uk/news/1024/branded_news/9B76/production/_131289793_mediaitem131289792.jpg\",\n            \"publishedAt\": \"2023-10-01T18:30:00Z\",\n            \"content\": \"A David Hockney ceramic cat gifted to strangers who gave the artist shelter as a student is set to fetch tens of thousands of pounds at auction.\\r\\nPeter Richards and wife Wendy welcomed in two sodden … [+3205 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Zonanegativa.com\"\n            },\n            \"author\": \"Tristan Cardona\",\n            \"title\": \"Más allá de la Galia #037. François Bourgeon, Corrado Mastantuono y Denis McLoughlin\",\n            \"description\": \"Trigésimo séptima entrega de Más allá de la Galia, la revista del cómic europeo en Zona Negativa, con las novedades y noticias de estos últimos meses.\",\n            \"url\": \"https://www.zonanegativa.com/mas-alla-de-la-galia-037-septiembre-2023/\",\n            \"urlToImage\": \"https://www.zonanegativa.com/imagenes/2021/09/aaMas-alla-de-la-Galia01.jpg\",\n            \"publishedAt\": \"2023-10-01T08:00:10Z\",\n            \"content\": \"Bienvenid@s a Más allá de la Galia\\r\\nEs curiosa la querencia a la nostalgia que el mercado del cómic franco belga ha experimentado durante este siglo. Las revisiones actualizadas de series como Spirou… [+28053 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Sap.com\"\n            },\n            \"author\": \"Robert Kelly\",\n            \"title\": \"New pilot service to help customers prepare critical integration scenarios to migrate to SAP Integration Suite\",\n            \"description\": \"Customers are starting to future-proof their integration scenarios by moving to the cloud and migrating their SAP Process Orchestration systems to the SAP Integration Suite. As you may be aware, earlier this year SAP released […]\",\n            \"url\": \"https://blogs.sap.com/2023/10/02/new-pilot-service-to-help-customers-prepare-critical-integration-scenarios-to-migrate-to-sap-integration-suite/\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T09:08:06Z\",\n            \"content\": \"Customers are starting to future-proof their integration scenarios by moving to the cloud and migrating their SAP Process Orchestration systems to the SAP Integration Suite. As you may be aware, earl… [+2027 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"the-irish-times\",\n                \"name\": \"The Irish Times\"\n            },\n            \"author\": \"Philip Reid\",\n            \"title\": \"Rome heroics show Rory McIlroy is Europe’s Ryder Cup leader in both word and deed\",\n            \"description\": \"McIlroy targets victory on American soil at Bethpage Black in New York in 2025\",\n            \"url\": \"https://www.irishtimes.com/sport/golf/2023/10/02/rome-heroics-show-rory-mcilroy-is-europes-ryder-cup-leader-in-both-word-and-deed/\",\n            \"urlToImage\": \"https://www.irishtimes.com/resizer/gXVjcOEysoG05ryWDOwASMexLFs=/1200x630/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/6EFQFLJOB4X445AWBZVEWHPDZ4.jpg\",\n            \"publishedAt\": \"2023-10-02T14:45:08Z\",\n            \"content\": \"Finally, Rory McIlroy became Rory McIlroy in a Ryder Cup. He emerged as a leader of the European team winning four points from five, and unlucky not to have made it a clean sweep in Rome, where the f… [+5809 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Github.com\"\n            },\n            \"author\": \"ushakov\",\n            \"title\": \"Bruno – Opensource, Sustainability, Privacy, Freedom and Incentives\",\n            \"description\": \"Overview Lately, we've seen an influx of users migrating from other API clients, all of whom have embraced Bruno with enthusiasm. However, there is a prevalent sense of concern among them regarding...\",\n            \"url\": \"https://github.com/usebruno/bruno/discussions/269\",\n            \"urlToImage\": \"https://opengraph.githubassets.com/b52c77087d57378a1a0c58a328ce9f2ddace6cbe779c3e9d6c97a6d2e099749f/usebruno/bruno/discussions/269\",\n            \"publishedAt\": \"2023-10-01T17:19:26Z\",\n            \"content\": \"Overview\\r\\nLately, we've seen an influx of users migrating from other API clients, all of whom have embraced Bruno with enthusiasm. However, there is a prevalent sense of concern among them regarding … [+5761 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Github.com\"\n            },\n            \"author\": \"typosaur\",\n            \"title\": \"Show HN: Postman and Insomnia Alternatives\",\n            \"description\": \"Article URL: https://github.com/stepci/awesome-api-clients\\nComments URL: https://news.ycombinator.com/item?id=37725326\\nPoints: 3\\n# Comments: 0\",\n            \"url\": \"https://github.com/stepci/awesome-api-clients\",\n            \"urlToImage\": \"https://opengraph.githubassets.com/ed1969d28b10c965638ce74f351378410ef619bdefaa5562bbdaa804ff67e5bd/stepci/awesome-api-clients\",\n            \"publishedAt\": \"2023-10-01T12:32:52Z\",\n            \"content\": \"Criteria: open-source, more than 200 stars and 2 contributors.<li>Step CI (repo) - Open-source API Test Automation framework\\r\\n</li><li>Hurl (repo) - Hurl, run and test HTTP requests with plain text.\\r… [+697 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Projectforge.dev\"\n            },\n            \"author\": \"kyle_u\",\n            \"title\": \"Show HN: Project Forge, my local app that helps you build Golang applications\",\n            \"description\": \"Hi, HN! I've spent the last few years building Project Forge, a web application generator/manager, and I'm excited to release it today.Project Forge helps you create and maintain Golang web applications using the latest tech from the Golang ecosystem, with a …\",\n            \"url\": \"https://projectforge.dev\",\n            \"urlToImage\": \"https://projectforge.dev/assets/projectforge.svg\",\n            \"publishedAt\": \"2023-10-02T13:54:14Z\",\n            \"content\": \"Project Forge\\r\\nProject Forge is an application that allows you to generate, manage, and grow web applications built using the Go programming language.\\r\\n You control your application's features, provi… [+4210 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Interia.pl\"\n            },\n            \"author\": \"INTERIA.PL\",\n            \"title\": \"Miłość w życiu jest najważniejsza! Krist Van D przerabia hit z lat 90.\",\n            \"description\": \"Znany z lat 90. hit \\\"Because I Love You\\\" w oryginale wykonywany przez Steviego B przerobił na taneczną wersję polski DJ i producent Krist Van D. Nagranie do nowej odsłony ma już ponad 150 tys. odsłon.\",\n            \"url\": \"https://muzyka.interia.pl/wiadomosci/news-milosc-w-zyciu-jest-najwazniejsza-krist-van-d-przerabia-hit-,nId,7062647\",\n            \"urlToImage\": \"https://i.iplsc.com/-/000HQGY3NHELS8Q3-C461-F4.jpg\",\n            \"publishedAt\": \"2023-10-02T11:59:57Z\",\n            \"content\": \"Krist Van D\\r\\n tym razem przygotowa utwór w klimacie taneczno-romantycznym. \\\"Because I Love You\\\"\\r\\n to nowa wersja wielkiego przeboju z pocztku lat 90., za który odpowiada Stevie B\\r\\n. Orygina ma ponad … [+1769 chars]\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "NewsAPI-Top Headlines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=ru&apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "ru"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=ru&apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "ru"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:13:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Cached-Result",
+							"value": "false"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=BnbXtIqBr09girCZn0B%2F%2Fx55DBq%2FgjbP9Yswz6SuLmNGp3dyJh2P3WftvxKQP%2BUg%2BvMIkFuFb1sPF1dvz1ixs8bw7yU9YbinkJS%2F2v3%2FCNd0WLO%2BsKsKDooDA3ut\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "8106792bdcb4406d-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 34,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Кубанские Новости\",\n            \"title\": \"Игроки «Краснодара» Сафонов и Волков вызваны в сборную России - Кубанские Новости\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiYWh0dHBzOi8va3VibmV3cy5ydS9zcG9ydC8yMDIzLzEwLzAyL2lncm9raS1rcmFzbm9kYXJhLXNhZm9ub3YtaS12b2xrb3Ytdnl6dmFueS12LXNib3JudXl1LXJvc3NpaS_SAWVodHRwczovL2t1Ym5ld3MucnUvYW1wL3Nwb3J0LzIwMjMvMTAvMDIvaWdyb2tpLWtyYXNub2RhcmEtc2Fmb25vdi1pLXZvbGtvdi12eXp2YW55LXYtc2Jvcm51eXUtcm9zc2lpLw?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T15:26:56Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"DTF\",\n            \"title\": \"В Бангладеше нашли смартфон, похожий на отечественный «Р-ФОН». В России утверждают, что это разные устройства — Мобайл на DTF - DTF\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMijQFodHRwczovL2R0Zi5ydS9tb2JpbGUvMjE2NjM4Mi12LWJhbmdsYWRlc2hlLW5hc2hsaS1zbWFydGZvbi1wb2hvemhpeS1uYS1vdGVjaGVzdHZlbm55eS1yLWZvbi12LXJvc3NpaS11dHZlcnpoZGF5dXQtY2h0by1ldG8tcmF6bnllLXVzdHJveXN0dmHSAQA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T14:08:08Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Украинская правда\",\n            \"title\": \"Зеленский: Пауза после 11-го пакета санкций уже слишком затянулась - Украинская правда\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiNWh0dHBzOi8vd3d3LnByYXZkYS5jb20udWEvcnVzL25ld3MvMjAyMy8xMC8yLzc0MjIzMTEv0gE-aHR0cHM6Ly93d3cucHJhdmRhLmNvbS51YS9ydXMvbmV3cy8yMDIzLzEwLzIvNzQyMjMxMS9pbmRleC5hbXA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T13:38:51Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"URA.RU\",\n            \"title\": \"Азербайджан дал гарантии жителям Карабаха - URA.RU\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiIGh0dHBzOi8vdXJhLm5ld3MvbmV3cy8xMDUyNjkwNjkx0gEA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T13:20:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Леди Mail.ru\",\n            \"title\": \"Рената Литвинова стала звездой показа Balenciaga - Леди Mail.ru\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiVWh0dHBzOi8vbGFkeS5tYWlsLnJ1L2FydGljbGUvNTM1MjUwLXJlbmF0YS1saXR2aW5vdmEtc3RhbGEtenZlemRvai1wb2themEtYmFsZW5jaWFnYS_SAQA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T13:02:43Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Бомбардир.ру\",\n            \"title\": \"«Спартак» поставил ультиматум Джикии - Бомбардир.ру\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiQ2h0dHBzOi8vYm9tYmFyZGlyLnJ1L25ld3MvNzA5NzA3LXNwYXJ0YWstcG9zdGF2aWwtdWx0aW1hdHVtLWR6aGlraWnSASRodHRwczovL2JvbWJhcmRpci5ydS9uZXdzLzcwOTcwNy9hbXA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T12:44:09Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Ведомости\",\n            \"title\": \"Экс-премьер СССР досрочно сдал мандат сенатора - Ведомости\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMia2h0dHBzOi8vd3d3LnZlZG9tb3N0aS5ydS9wb2xpdGljcy9hcnRpY2xlcy8yMDIzLzEwLzAyLzk5ODI4MS1la3MtcHJlbWVyLXNzc3ItZG9zcm9jaG5vLXNkYWwtbWFuZGF0LXNlbmF0b3Jh0gEA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T12:26:22Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Forbes Russia\",\n            \"title\": \"Курс доллара превысил 99 рублей впервые с 15 августа - Forbes Russia\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiWWh0dHBzOi8vd3d3LmZvcmJlcy5ydS9maW5hbnN5LzQ5NzY0OC1rdXJzLWRvbGxhcmEtcHJldnlzaWwtOTktcnVibGVqLXZwZXJ2eWUtcy0xNS1hdmd1c3Rh0gEA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T12:02:41Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Soccer.ru\",\n            \"title\": \"Бывший тренер Спартака заявил о готовности возглавить команду - Soccer.ru\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiOGh0dHBzOi8vbS5zb2NjZXIucnUvbmV3cy8xMzYyMTcwL2thcnJlcmEtbWFzc2ltby1zcGFydGFr0gEA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T11:52:52Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Кубанские Новости\",\n            \"title\": \"Что известно о ситуации на подъездах к Крымскому мосту 2 октября - Кубанские Новости\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMib2h0dHBzOi8va3VibmV3cy5ydS9vYnNoY2hlc3R2by8yMDIzLzEwLzAyL2NodG8taXp2ZXN0bm8tby1zaXR1YXRzaWktbmEtcG9kZXpkYWtoLWsta3J5bXNrb211LW1vc3R1LTItb2t0eWFicnlhL9IBAA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T11:11:21Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Леди Mail.ru\",\n            \"title\": \"Девушка ДиКаприо на подиуме, Эндрю Гарфилд в зале – звезды на шоу Valentino - Леди Mail.ru\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiV2h0dHBzOi8vbGFkeS5tYWlsLnJ1L2FydGljbGUvNTM1MjcwLWthanlhLWdlcmJlci1uYS1wb2RpdW1lLXNlc3RyeS1oaWx0b24tdi16YWxlLWthay1wL9IBKGh0dHBzOi8vbGFkeS5tYWlsLnJ1L2FtcC9hcnRpY2xlLzUzNTI3MC8?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T11:10:38Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Investing.com Россия\",\n            \"title\": \"Главные новости: рост фьючерсов после решения по работе правительства США От Investing.com - Investing.com Россия\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiP2h0dHBzOi8vcnUuaW52ZXN0aW5nLmNvbS9uZXdzL3N0b2NrLW1hcmtldC1uZXdzL2FydGljbGUtMjI5NTY2MNIBAA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:58:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"47 новостей из Ленинградской области\",\n            \"title\": \"После шторма будет снег. Циклон с Туманного Альбиона резко изменит погоду в Ленобласти - 47 новостей из Ленинградской области\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiImh0dHBzOi8vNDduZXdzLnJ1L2FydGljbGVzLzIzODYxNC_SASdodHRwczovL20uNDduZXdzLnJ1L2FtcGFydGljbGVzLzIzODYxNC8?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:42:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Кубанские Новости\",\n            \"title\": \"А солнце светит всем неодинаково: восполняем дефицит витамина D - Кубанские Новости\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiaWh0dHBzOi8va3VibmV3cy5ydS9wYW5vcmFtYS8yMDIzLzEwLzAyL2Etc29sbnRzZS1zdmV0aXQtdnNlbS1uZW9kaW5ha292by12b3Nwb2xueWFlbS1kZWZpdHNpdC12aXRhbWluYS1kL9IBbWh0dHBzOi8va3VibmV3cy5ydS9hbXAvcGFub3JhbWEvMjAyMy8xMC8wMi9hLXNvbG50c2Utc3ZldGl0LXZzZW0tbmVvZGluYWtvdm8tdm9zcG9sbnlhZW0tZGVmaXRzaXQtdml0YW1pbmEtZC8?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:29:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"URA.RU\",\n            \"title\": \"В Кремле назвали абсурдом запрет на въезд авто из РФ в страны ЕС - URA.RU\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiIGh0dHBzOi8vdXJhLm5ld3MvbmV3cy8xMDUyNjkwNTQ00gEkaHR0cHM6Ly9hbXAudXJhLm5ld3MvbmV3cy8xMDUyNjkwNTQ0?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:15:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Кубанские Новости\",\n            \"title\": \"Apple объяснила, почему iPhone 15 сильно нагревается - Кубанские Новости\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiX2h0dHBzOi8va3VibmV3cy5ydS9vYnNoY2hlc3R2by8yMDIzLzEwLzAyL2FwcGxlLW9ieWFzbmlsYS1wb2NoZW11LWlwaG9uZS0xNS1zaWxuby1uYWdyZXZhZXRzeWEv0gFjaHR0cHM6Ly9rdWJuZXdzLnJ1L2FtcC9vYnNoY2hlc3R2by8yMDIzLzEwLzAyL2FwcGxlLW9ieWFzbmlsYS1wb2NoZW11LWlwaG9uZS0xNS1zaWxuby1uYWdyZXZhZXRzeWEv?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:10:41Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"МУЗ-ТВ\",\n            \"title\": \"Светлана Дружинина прогнала Анастасию Макееву с красной дорожки - МУЗ-ТВ\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiWmh0dHBzOi8vbXV6LXR2LnJ1L25ld3Mvc3ZldGxhbmEtZHJ1emhpbmluYS1wcm9nbmFsYS1hbmFzdGFzaXl1LW1ha2VldnUtcy1rcmFzbm95LWRvcm96aGtpL9IBAA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:01:45Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Meduza\",\n            \"title\": \"Нобелевскую премию по медицине присудили создателям технологии синтеза мРНК, позволившей сделать вакцины от COVID-19 - Meduza\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMimgFodHRwczovL21lZHV6YS5pby9uZXdzLzIwMjMvMTAvMDIvbm9iZWxldnNrdXl1LXByZW1peXUtcG8tbWVkaXRzaW5lLXByaXN1ZGlsaS1zb3pkYXRlbHlhbS10ZWhub2xvZ2lpLXNpbnRlemEtbXJuay1wb3p2b2xpdnNoZXktc2RlbGF0LXZha3RzaW55LW90LWNvdmlkLTE50gGeAWh0dHBzOi8vbWVkdXphLmlvL2FtcC9uZXdzLzIwMjMvMTAvMDIvbm9iZWxldnNrdXl1LXByZW1peXUtcG8tbWVkaXRzaW5lLXByaXN1ZGlsaS1zb3pkYXRlbHlhbS10ZWhub2xvZ2lpLXNpbnRlemEtbXJuay1wb3p2b2xpdnNoZXktc2RlbGF0LXZha3RzaW55LW90LWNvdmlkLTE5?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T09:52:00Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"TELEPROGRAMMA.PRO\",\n            \"title\": \"Идеальная форма — круглый год - TELEPROGRAMMA.PRO\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiZmh0dHBzOi8vdGVsZXByb2dyYW1tYS5wcm8vaGIvaGVhbHRoL25pZDQ0NDE1NjNfYXU3MzY5MWF1YXVhdV9jcjczNjkxY3JjcmNyX2lkZWFsbmF5YS1mb3JtYS1rcnVnbHl5LWdvZNIBAA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T09:41:58Z\",\n            \"content\": null\n        },\n        {\n            \"source\": {\n                \"id\": \"google-news\",\n                \"name\": \"Google News\"\n            },\n            \"author\": \"Правда.Ру\",\n            \"title\": \"Победы не будет: Украине придётся выходить из конфликта с РФ, заявили в ФРГ - Правда.Ру\",\n            \"description\": null,\n            \"url\": \"https://news.google.com/rss/articles/CBMiP2h0dHBzOi8vd3d3LnByYXZkYS5ydS9uZXdzL3dvcmxkLzE4OTIzMTgtdWtyYWluYV9rb25mbGlrdF9zc2hhL9IBAA?oc=5\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T09:30:00Z\",\n            \"content\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "NewsAPI-Everything",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=oktoberfest&sortBy=publishedAt&from=2023-10-02&language=de&apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "oktoberfest"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "from",
+							"value": "2023-10-02"
+						},
+						{
+							"key": "language",
+							"value": "de"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=oktoberfest&sortBy=publishedAt&from=2023-10-02&language=de&apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "oktoberfest"
+								},
+								{
+									"key": "sortBy",
+									"value": "publishedAt"
+								},
+								{
+									"key": "from",
+									"value": "2023-10-02"
+								},
+								{
+									"key": "language",
+									"value": "de"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:13:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Cached-Result",
+							"value": "false"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=uASP0%2BNtstTpQ1wULB4Y5mOEvBuZsUXfdtVJgehzRVpnod8GrBQ35IAjtO%2F%2F9GMiQi4AgsB0AhkV6MS7yy%2BjaTzmtPoQbky8aLZCwHuUviytRzEs3XlItQgUHzd9\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "810679b55e8b406d-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\",\n    \"totalResults\": 17,\n    \"articles\": [\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"STERN.de\"\n            },\n            \"author\": \"STERN.de\",\n            \"title\": \"Oktoberfest: Wiesn-Besucherinnen schlagen mit Maßkrug zu\",\n            \"description\": \"Gleich zwei Mal haben Wiesn-Besucherinnen bei abendlichen Festzeit-Streitereien zum Maßkrug gegriffen und zugeschlagen. Am Sonntagabend waren zwei Besucherinnen - die eine aus Hessen, die andere aus München - in Streit geraten, wie die Polizei am Montag mitte…\",\n            \"url\": \"https://www.stern.de/gesellschaft/regional/bayern/oktoberfest--wiesn-besucherinnen-schlagen-mit-masskrug-zu--33878764.html\",\n            \"urlToImage\": \"https://image.stern.de/33878766/t/a6/v1/w1440/r1.7778/-/02--urnnewsmldpacom2009010123100299416477v1w800h600l1464t272r3272b2418jpeg---aaf3b94ac94426ed.jpg\",\n            \"publishedAt\": \"2023-10-02T14:51:35Z\",\n            \"content\": \"Gleich zwei Mal haben Wiesn-Besucherinnen bei abendlichen Festzeit-Streitereien zum Maßkrug gegriffen und zugeschlagen. Am Sonntagabend waren zwei Besucherinnen - die eine aus Hessen, die andere aus … [+1198 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"die-zeit\",\n                \"name\": \"Die Zeit\"\n            },\n            \"author\": \"ZEIT ONLINE: News -\",\n            \"title\": \"Oktoberfest: Wiesn-Besucherinnen schlagen mit Maßkrug zu\",\n            \"description\": \"\",\n            \"url\": \"https://www.zeit.de/zustimmung?url=https%3A%2F%2Fwww.zeit.de%2Fnews%2F2023-10%2F02%2Fwiesn-besucherinnen-schlagen-mit-masskrug-zu\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T14:51:35Z\",\n            \"content\": \"When browsing with ads:\\r\\nWe collect personal data and also transmit it to third-party providers\\r\\n that help us improve and finance our digital content. Some of the information stored on your device, … [+821 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"STERN.de\"\n            },\n            \"author\": \"STERN.de\",\n            \"title\": \"Oktoberfest: Viel Sonne und Regenschauer zum Abschluss der Wiesn\",\n            \"description\": \"Viel Sonnenschein und einen abendlichen Regenschauer dürfen die Besucher des Oktoberfests zum Abschluss der Wiesn am Dienstag erwarten. Mindestens bis zum Nachmittag bleibe das Wetter am Tag der Deutschen Einheit sonnig, bis zu 29 Grad seien in München möglic…\",\n            \"url\": \"https://www.stern.de/gesellschaft/regional/bayern/oktoberfest--viel-sonne-und-regenschauer-zum-abschluss-der-wiesn-33877880.html\",\n            \"urlToImage\": \"https://image.stern.de/33877882/t/tu/v2/w1440/r1.7778/-/02--urnnewsmldpacom2009010123100299413272v3w800h600l812t226r2007b1621jpeg---24e9891809299ae7.jpg\",\n            \"publishedAt\": \"2023-10-02T13:25:22Z\",\n            \"content\": \"Viel Sonnenschein und einen abendlichen Regenschauer dürfen die Besucher des Oktoberfests zum Abschluss der Wiesn am Dienstag erwarten. Mindestens bis zum Nachmittag bleibe das Wetter am Tag der Deut… [+1309 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Süddeutsche Zeitung\"\n            },\n            \"author\": \"Süddeutsche Zeitung\",\n            \"title\": \"Oktoberfest-Promis: Wiesn-Grüüüüße vom Glööckler\",\n            \"description\": \"Auf der Zielgeraden des Oktoberfests zeigen sich FC-Bayern-Legenden, zahlreiche Möchtegerns, ein \\\"Dahoam is Dahoam\\\"-Soap-Sternchen - und die Katzenberger-Mutter. Die küsst ihren geheimnisumwölkten neuen Freund: Mr T. Einblicke ins letzte Partywochenende der W…\",\n            \"url\": \"https://www.sueddeutsche.de/muenchen/oktoberfest-2023-muenchen-iris-klein-harald-gloeoeckler-promis-sonntag-bilder-1.6267768\",\n            \"urlToImage\": \"https://www.sueddeutsche.de/image/sz.1.6267778/1200x675?v=1696251163\",\n            \"publishedAt\": \"2023-10-02T12:48:45Z\",\n            \"content\": \"Das Oktoberfest 2023 biegt auf die Zielgeraden. Wer es jetzt noch nicht auf die Festwiese geschafft hat, sollte sich sputen. Und bekannte Menschen, welche das Fest nutzen wollen, um vielleicht noch e… [+3617 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"Süddeutsche Zeitung\"\n            },\n            \"author\": \"Süddeutsche Zeitung\",\n            \"title\": \"Oktoberfest: Upskirting am Biertisch und ein Übergriff hinterm Wiesnzelt\",\n            \"description\": \"Übergriffe auf Frauen und mehrere Attacken mit Verletzten: Die Polizei hat auf der Wiesn viel zu tun. Und die Sanitäter stellen zufällig einen Gehirntumor bei einem Besucher fest. Alle News zum größten Volksfest der Welt.\",\n            \"url\": \"https://www.sueddeutsche.de/muenchen/oktoberfest-muenchen-2023-news-upskirting-uebergriffe-frauen-1.6254175\",\n            \"urlToImage\": \"https://www.sueddeutsche.de/image/sz.1.6267246/1200x675?v=1696245679\",\n            \"publishedAt\": \"2023-10-02T11:21:19Z\",\n            \"content\": \"Vom 16. September bis zum 3. Oktober findet das Oktoberfest wieder in München statt - bereits zum 188. Mal. Gut sechs Millionen Besucherinnen und Besucher dürften wieder auf die Theresienwiese kommen… [+133 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"die-zeit\",\n                \"name\": \"Die Zeit\"\n            },\n            \"author\": \"ZEIT ONLINE: News -\",\n            \"title\": \"Oktoberfest: Viel Sonne und ein kurzes Unwetter zum Abschluss der Wiesn\",\n            \"description\": \"\",\n            \"url\": \"https://www.zeit.de/zustimmung?url=https%3A%2F%2Fwww.zeit.de%2Fnews%2F2023-10%2F02%2Fviel-sonne-und-ein-kurzes-unwetter-zum-abschluss-der-wiesn\",\n            \"urlToImage\": null,\n            \"publishedAt\": \"2023-10-02T10:58:24Z\",\n            \"content\": \"When browsing with ads:\\r\\nWe collect personal data and also transmit it to third-party providers\\r\\n that help us improve and finance our digital content. Some of the information stored on your device, … [+821 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"STERN.de\"\n            },\n            \"author\": \"STERN.de\",\n            \"title\": \"Oktoberfest: Viel Sonne und ein kurzes Unwetter zum Abschluss der Wiesn\",\n            \"description\": \"Viel Sonnenschein und ein abendliches Unwetter dürfen die Besucher des Oktoberfests zum Abschluss der Wiesn am Dienstag erwarten. Mindestens bis zum Nachmittag bleibe das Wetter am Tag der Deutschen Einheit sonnig, bis zu 29 Grad seien in München möglich, sag…\",\n            \"url\": \"https://www.stern.de/gesellschaft/regional/bayern/oktoberfest--viel-sonne-und-ein-kurzes-unwetter-zum-abschluss-der-wiesn-33877880.html\",\n            \"urlToImage\": \"https://image.stern.de/33877882/t/_0/v1/w1440/r1.7778/-/02--urnnewsmldpacom2009010123100299413272v3w800h600l812t226r2007b1621jpeg---24e9891809299ae7.jpg\",\n            \"publishedAt\": \"2023-10-02T10:58:24Z\",\n            \"content\": \"Viel Sonnenschein und ein abendliches Unwetter dürfen die Besucher des Oktoberfests zum Abschluss der Wiesn am Dienstag erwarten. Mindestens bis zum Nachmittag bleibe das Wetter am Tag der Deutschen … [+1287 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"focus\",\n                \"name\": \"Focus\"\n            },\n            \"author\": \"Von FOCUS-online-Reporter Niklas Golitschek\",\n            \"title\": \"Weite Anreisen, lange Wartezeiten - Weil die Wiesn zu voll ist, müssen Touristen auf Kneipen ausweichen\",\n            \"description\": \"An den Wochenenden mussten Oktoberfestbesucher mit Wartezeiten rechnen, um in die Festzelte zu gelangen. Manch frustrierter Gast zog deshalb erst einmal in die umliegenden Kneipen.Von FOCUS-online-Reporter Niklas Golitschek\",\n            \"url\": \"https://www.focus.de/panorama/oktoberfest/oktoberfest-zu-volle-wiesn-touristen-muessen-auf-kneipe-ausweichen_id_216995317.html\",\n            \"urlToImage\": \"https://p6.focus.de/img/fotos/id_216994647/jake-snelling-collum-paine-1.jpg?im=Crop%3D%280%2C250%2C2000%2C1000%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=f08218c8bbaacdaade15f35f5080e7707eee0933ff30c47bf3cfdc0515c03650\",\n            \"publishedAt\": \"2023-10-02T10:12:20Z\",\n            \"content\": \"An den Wochenenden mussten Oktoberfestbesucher mit Wartezeiten rechnen, um in die Festzelte zu gelangen. Manch frustrierter Gast zog deshalb erst einmal in die umliegenden Kneipen.Ihren ersten Oktobe… [+2369 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"focus\",\n                \"name\": \"Focus\"\n            },\n            \"author\": \"Von FOCUS-online-Reporter Niklas Golitschek\",\n            \"title\": \"Wiesn-Besucher vor Landtagswahl - „Es reicht nicht mehr, 45 Jahre schwer zu arbeiten“, sagt Bäcker Franz (60)\",\n            \"description\": \"Vor der Landtagswahl in Bayern bestimmen die bundespolitischen Themen das Meinungsbild der Oktoberfest-Besucher. Vor allem die Unzufriedenheit mit der Ampel-Koalition macht sich dabei bemerkbar.Von FOCUS-online-Reporter Niklas Golitschek\",\n            \"url\": \"https://www.focus.de/panorama/oktoberfest/wiesn-besucher-ueber-landtagswahl-es-reicht-nicht-mehr-45-jahre-schwer-zu-arbeiten-erzaehlt-baecker-franz-60_id_215837129.html\",\n            \"urlToImage\": \"https://p6.focus.de/img/fotos/id_215833804/lorena-jannik-vroni.jpg?im=Crop%3D%280%2C250%2C2000%2C1000%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=5c15892e7426ffe73dfe3a9b2ee1d34295cea02d153cf73645e076c42ba53ca1\",\n            \"publishedAt\": \"2023-10-02T09:30:29Z\",\n            \"content\": \"<ul><li>\\r\\nKommentare</li><li>\\r\\nE-Mail</li><li>\\r\\nTeilen</li><li>\\r\\nMehr</li><li>\\r\\nTwitter</li><li>\\r\\nDrucken</li><li>\\r\\nFeedback</li><li>\\r\\nFehler meldenSie haben einen Fehler gefunden?\\r\\nBitte markieren S… [+4193 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"focus\",\n                \"name\": \"Focus\"\n            },\n            \"author\": \"Von FOCUS-online-Reporter Niklas Golitschek\",\n            \"title\": \"Oktoberfest-Budget - So viel Kohle gibt Gruppe von Amerikanern auf der Wiesn aus\",\n            \"description\": \"Eine Gruppe Amerikaner lässt es auf dem Oktoberfest richtig krachen – und die Mega-Rechnung kann sich sehen lassen. Aber auch andere Wiesn-Besucher rechnen mit hohen Ausgaben für die Wiesn-Party.Von FOCUS-online-Reporter Niklas Golitschek\",\n            \"url\": \"https://www.focus.de/panorama/oktoberfest/oktoberfest-budget-so-viel-kohle-gibt-gruppe-von-amerikanern-auf-der-wiesn-aus_id_215151993.html\",\n            \"urlToImage\": \"https://p6.focus.de/img/fotos/id_215152082/wiesn-oktoberfest.jpg?im=Crop%3D%280%2C117%2C1136%2C568%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=baa4a30fd223e360c12afbe0bec6478474781c847f188ca779f07b46618f9eb7\",\n            \"publishedAt\": \"2023-10-02T09:28:26Z\",\n            \"content\": \"Eine Gruppe Amerikaner lässt es auf dem Oktoberfest richtig krachen und die Mega-Rechnung kann sich sehen lassen. Doch auch andere Wiesn-Besucher rechnen mit hohen Ausgaben für die Wiesn-Party.Für Ma… [+2928 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"focus\",\n                \"name\": \"Focus\"\n            },\n            \"author\": \"FOCUS online\",\n            \"title\": \"Corona-Fallzahlen steigen wieder - Brauchen wir wieder Masken? Das sagen Experten\",\n            \"description\": \"Immer mehr Menschen erwischt das Corona-Virus wieder. Grund zur Besorgnis? Brauchen wir wieder Masken? Und was hat das Oktoberfest mit alldem zu tun? Was Experten sagen.\",\n            \"url\": \"https://www.focus.de/gesundheit/news/corona-fallzahlen-steigen-wieder-brauchen-wir-wieder-masken-das-sagen-experten_id_216919000.html\",\n            \"urlToImage\": \"https://p6.focus.de/img/fotos/id_216946905/gettyimages-1291075007.jpg?im=Crop%3D%280%2C128%2C2121%2C1061%29%3BResize%3D%281200%2C627%29&impolicy=perceptual&quality=mediumHigh&hash=f18bb4e5dbf85e562a7e69eff8f0fc505039353fd4e3edb027b7404d72b58d7f\",\n            \"publishedAt\": \"2023-10-02T08:38:42Z\",\n            \"content\": \"Immer mehr Menschen erwischt das Corona-Virus wieder. Grund zur Besorgnis? Brauchen wir wieder Masken? Und was hat das Oktoberfest mit alldem zu tun? Was Experten sagen.Corona ist gekommen, um zu ble… [+4378 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": null,\n                \"name\": \"DIE WELT\"\n            },\n            \"author\": \"Oskar Beck\",\n            \"title\": \"Max Eberl schweigt – aus zwei guten Gründen\",\n            \"description\": \"RB Leipzig macht Max Eberl den Prozess. Der scharfe Tonfall aus Sachsen könnte einen öffentlichen Rosenkrieg provozieren. Der erfolgreiche Manager aber macht da nicht mit. Eberl mag dastehen wie ein ehrenloser Geselle. Aber er ist keiner.\",\n            \"url\": \"https://www.welt.de/sport/article247765574/RB-Leipzig-Max-Eberl-schweigt-aus-zwei-guten-Gruenden.html\",\n            \"urlToImage\": \"https://img.welt.de/img/sport/mobile247771438/8141359497-ci16x9-w1200/TV-Show-Doppelpass-On-Sport1-Channel-2.jpg\",\n            \"publishedAt\": \"2023-10-02T07:33:03Z\",\n            \"content\": \"Es hat Zeiten gegeben, da hätten mit Max Eberl viele gern das Leben getauscht. Er stand auf der Sonnenseite des Fußballs, er war erfolgreich und einer zum Knuddeln. Aber das ist vorbei. Wenn es heute… [+6968 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"bild\",\n                \"name\": \"Bild\"\n            },\n            \"author\": \"laszlo Pinter und daniela pfad\",\n            \"title\": \"18-Jähriger festgenommen - Mann (49) bekommt Glaskrug auf den Kopf – tot\",\n            \"description\": \"Eppelborn (Saarland) – Tödliche Glaskrug-Attacke in der Nacht auf Montag vor einer Gaststätte in Eppelborn (Landkreis Neunkirchen)!\",\n            \"url\": \"https://www.bild.de/regional/saarland/saarland-news/18-jaehriger-festgenommen-mann-49-bekommt-glaskrug-auf-kopf-tot-85605744.bild.html\",\n            \"urlToImage\": \"https://images.bild.de/651a641b3e5d924b6de57869/597125e542fd358114836be22178c037,ce5f7bc2?w=1280\",\n            \"publishedAt\": \"2023-10-02T07:21:58Z\",\n            \"content\": \"Eppelborn (Saarland) Tödliche Glaskrug-Attacke vor einer Gaststätte in Eppelborn (Landkreis Neunkirchen)!\\r\\nIn der Nacht auf Sonntag gerieten zwei Männer in Streit. Ein 49-Jähriger bekam einen Glaskru… [+666 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"bild\",\n                \"name\": \"Bild\"\n            },\n            \"author\": \"Thomas Gautier\",\n            \"title\": \"Oktoberfest München - Wir sind die Wiesn-Werkler\",\n            \"description\": \"Entdecken Sie die Handwerker auf dem Oktoberfest, die täglich kleine und große Schäden reparieren und für einen reibungslosen Ablauf sorgen.\",\n            \"url\": \"https://www.bild.de/regional/muenchen/muenchen-aktuell/oktoberfest-muenchen-sie-reparieren-die-wiesn-85569992.bild.html\",\n            \"urlToImage\": \"https://images.bild.de/65154dbc5746ae17c6ee8d81/f64f7676f717909cfc3ebd80da7d49b6,4f23c34b?w=1280\",\n            \"publishedAt\": \"2023-10-02T05:59:43Z\",\n            \"content\": \"München  Wenn was auf der Wiesn wackelt, sind sie zur Stelle!\\r\\nZimmerer Mirko Pohle (54) und seine Männer sind die Handwerker auf dem \\r\\nOktoberfest. Sei bohren und hämmern, wo andere trinken und bagg… [+2078 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"bild\",\n                \"name\": \"Bild\"\n            },\n            \"author\": \"Stéphanie Mercier und Jakob Mell\",\n            \"title\": \"Maute renkt Schausteller ein - Er ist der MASSeur vom Oktoberfest\",\n            \"description\": \"Das Team der Physiotherapie-Praxis Body Tuning Agency ist erstmals auf dem Oktoberfest, um Wiesnbedienungen und Schaustellern bei Beschwerden zu helfen.\",\n            \"url\": \"https://www.bild.de/regional/muenchen/muenchen-aktuell/physiotherapie-auf-dem-oktoberfest-schluss-mit-hexenschuss-85567828.bild.html\",\n            \"urlToImage\": \"https://images.bild.de/65154309404dd42b11020fc3/fb32de7cd7876894728c1dcba1ce04f9,61aed8c9?w=1280\",\n            \"publishedAt\": \"2023-10-02T05:00:40Z\",\n            \"content\": \"München Bei Manuel Maute und seinem Team ist jeder Griff ein Treffer! Schluss mit Hexenschuss, steifer Hüfte oder eingeklemmten Nerv bei Wiesnbedienungen und Schaustellern.\\r\\nZum ersten Mal sind das T… [+1867 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"bild\",\n                \"name\": \"Bild\"\n            },\n            \"author\": \"BILD\",\n            \"title\": \"Bierwasser-Klospülung & Bio - So nachhaltig ist die Wiesn\",\n            \"description\": \"Das Oktoberfest ist nicht gerade ein Energiespar-Event. Seit Jahrzehnten feilt die Stadt München am Öko-Image des Festes.\",\n            \"url\": \"https://www.bild.de/regional/muenchen/muenchen-aktuell/bio-hendl-und-bierwasser-klospuelung-so-nachhaltig-ist-die-wiesn-85604716.bild.html\",\n            \"urlToImage\": \"https://images.bild.de/651a430a3e5d924b6de57849/d43a343d030da54acb62ead1e55930dd,21f4e998?w=1280\",\n            \"publishedAt\": \"2023-10-02T04:20:08Z\",\n            \"content\": \"München Fahrgeschäfte katapultieren die Gäste in den hell erleuchteten Nachthimmel. Sechs Millionen Besucher, teils von weit angereist, feiern in den Zelten. Sie trinken Millionen Maß Bier, verspeise… [+3158 chars]\"\n        },\n        {\n            \"source\": {\n                \"id\": \"bild\",\n                \"name\": \"Bild\"\n            },\n            \"author\": \"Tom Zinram\",\n            \"title\": \"Wiesn oder Kerwa! - Ist Fürth das schönere Volksfest?\",\n            \"description\": \"Fürth – Alle reden von der Wiesn (geht bis morgen). Aber sind unsere fränkischen Volksfeste nicht sogar schöner und gemütlicher? BILD wagt den Vergleich.\",\n            \"url\": \"https://www.bild.de/regional/nuernberg/nuernberg-news/wiesn-oder-kerwa-ist-fuerth-das-schoenere-volksfest-85603942.bild.html\",\n            \"urlToImage\": \"https://article.bildstatic.de/img/social-fallback.4ba8a06.jpg\",\n            \"publishedAt\": \"2023-10-02T04:02:40Z\",\n            \"content\": \"Fürth Alle reden von der Wiesn (geht bis morgen). Aber sind unsere fränkischen Volksfeste nicht sogar schöner und gemütlicher?\\r\\nDie Fürther Kerwa im Wiesn-Vergleich!\\r\\nDie Königin der fränkischen Kirc… [+2747 chars]\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "NewsAPI-Sources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines/sources?apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines",
+								"sources"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:14:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Cached-Result",
+							"value": "false"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=bRC2RSFSFdQvRMKY3uI3%2B4NnE50cMtvsESBPCWknliMWmYNao90ITOgH13nuT2K4SI9E6%2BG5D%2BNUrqtR2Innje8RHAuee3QWSQXlVXu1rgxhbv2UrxwI08BwF993\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "81067a1678ce406d-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\",\n    \"sources\": [\n        {\n            \"id\": \"abc-news\",\n            \"name\": \"ABC News\",\n            \"description\": \"Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.\",\n            \"url\": \"https://abcnews.go.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"abc-news-au\",\n            \"name\": \"ABC News (AU)\",\n            \"description\": \"Australia's most trusted source of local, national and world news. Comprehensive, independent, in-depth analysis, the latest business, sport, weather and more.\",\n            \"url\": \"http://www.abc.net.au/news\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"au\"\n        },\n        {\n            \"id\": \"aftenposten\",\n            \"name\": \"Aftenposten\",\n            \"description\": \"Norges ledende nettavis med alltid oppdaterte nyheter innenfor innenriks, utenriks, sport og kultur.\",\n            \"url\": \"https://www.aftenposten.no\",\n            \"category\": \"general\",\n            \"language\": \"no\",\n            \"country\": \"no\"\n        },\n        {\n            \"id\": \"al-jazeera-english\",\n            \"name\": \"Al Jazeera English\",\n            \"description\": \"News, analysis from the Middle East and worldwide, multimedia and interactives, opinions, documentaries, podcasts, long reads and broadcast schedule.\",\n            \"url\": \"http://www.aljazeera.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"ansa\",\n            \"name\": \"ANSA.it\",\n            \"description\": \"Agenzia ANSA: ultime notizie, foto, video e approfondimenti su: cronaca, politica, economia, regioni, mondo, sport, calcio, cultura e tecnologia.\",\n            \"url\": \"http://www.ansa.it\",\n            \"category\": \"general\",\n            \"language\": \"it\",\n            \"country\": \"it\"\n        },\n        {\n            \"id\": \"argaam\",\n            \"name\": \"Argaam\",\n            \"description\": \"ارقام موقع متخصص في متابعة سوق الأسهم السعودي تداول - تاسي - مع تغطيه معمقة لشركات واسعار ومنتجات البتروكيماويات , تقارير مالية الاكتتابات الجديده \",\n            \"url\": \"http://www.argaam.com\",\n            \"category\": \"business\",\n            \"language\": \"ar\",\n            \"country\": \"sa\"\n        },\n        {\n            \"id\": \"ars-technica\",\n            \"name\": \"Ars Technica\",\n            \"description\": \"The PC enthusiast's resource. Power users and the tools they love, without computing religion.\",\n            \"url\": \"http://arstechnica.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"ary-news\",\n            \"name\": \"Ary News\",\n            \"description\": \"ARY News is a Pakistani news channel committed to bring you up-to-the minute Pakistan news and featured stories from around Pakistan and all over the world.\",\n            \"url\": \"https://arynews.tv/ud/\",\n            \"category\": \"general\",\n            \"language\": \"ud\",\n            \"country\": \"pk\"\n        },\n        {\n            \"id\": \"associated-press\",\n            \"name\": \"Associated Press\",\n            \"description\": \"The AP delivers in-depth coverage on the international, politics, lifestyle, business, and entertainment news.\",\n            \"url\": \"https://apnews.com/\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"australian-financial-review\",\n            \"name\": \"Australian Financial Review\",\n            \"description\": \"The Australian Financial Review reports the latest news from business, finance, investment and politics, updated in real time. It has a reputation for independent, award-winning journalism and is essential reading for the business and investor community.\",\n            \"url\": \"http://www.afr.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"au\"\n        },\n        {\n            \"id\": \"axios\",\n            \"name\": \"Axios\",\n            \"description\": \"Axios are a new media company delivering vital, trustworthy news and analysis in the most efficient, illuminating and shareable ways possible.\",\n            \"url\": \"https://www.axios.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"bbc-news\",\n            \"name\": \"BBC News\",\n            \"description\": \"Use BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news.\",\n            \"url\": \"http://www.bbc.co.uk/news\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"bbc-sport\",\n            \"name\": \"BBC Sport\",\n            \"description\": \"The home of BBC Sport online. Includes live sports coverage, breaking news, results, video, audio and analysis on Football, F1, Cricket, Rugby Union, Rugby League, Golf, Tennis and all the main world sports, plus major events such as the Olympic Games.\",\n            \"url\": \"http://www.bbc.co.uk/sport\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"bild\",\n            \"name\": \"Bild\",\n            \"description\": \"Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, Sport, und Promis.\",\n            \"url\": \"http://www.bild.de\",\n            \"category\": \"general\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"blasting-news-br\",\n            \"name\": \"Blasting News (BR)\",\n            \"description\": \"Descubra a seção brasileira da Blasting News, a primeira revista feita pelo  público, com notícias globais e vídeos independentes. Junte-se a nós e torne- se um repórter.\",\n            \"url\": \"https://br.blastingnews.com\",\n            \"category\": \"general\",\n            \"language\": \"pt\",\n            \"country\": \"br\"\n        },\n        {\n            \"id\": \"bleacher-report\",\n            \"name\": \"Bleacher Report\",\n            \"description\": \"Sports journalists and bloggers covering NFL, MLB, NBA, NHL, MMA, college football and basketball, NASCAR, fantasy sports and more. News, photos, mock drafts, game scores, player profiles and more!\",\n            \"url\": \"http://www.bleacherreport.com\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"bloomberg\",\n            \"name\": \"Bloomberg\",\n            \"description\": \"Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.\",\n            \"url\": \"http://www.bloomberg.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"breitbart-news\",\n            \"name\": \"Breitbart News\",\n            \"description\": \"Syndicated news and opinion website providing continuously updated headlines to top news and analysis sources.\",\n            \"url\": \"http://www.breitbart.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"business-insider\",\n            \"name\": \"Business Insider\",\n            \"description\": \"Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.\",\n            \"url\": \"http://www.businessinsider.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"business-insider-uk\",\n            \"name\": \"Business Insider (UK)\",\n            \"description\": \"Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.\",\n            \"url\": \"http://uk.businessinsider.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"buzzfeed\",\n            \"name\": \"Buzzfeed\",\n            \"description\": \"BuzzFeed is a cross-platform, global network for news and entertainment that generates seven billion views each month.\",\n            \"url\": \"https://www.buzzfeed.com\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"cbc-news\",\n            \"name\": \"CBC News\",\n            \"description\": \"CBC News is the division of the Canadian Broadcasting Corporation responsible for the news gathering and production of news programs on the corporation's English-language operations, namely CBC Television, CBC Radio, CBC News Network, and CBC.ca.\",\n            \"url\": \"http://www.cbc.ca/news\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"ca\"\n        },\n        {\n            \"id\": \"cbs-news\",\n            \"name\": \"CBS News\",\n            \"description\": \"CBS News: dedicated to providing the best in journalism under standards it pioneered at the dawn of radio and television and continue in the digital age.\",\n            \"url\": \"http://www.cbsnews.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"cnn\",\n            \"name\": \"CNN\",\n            \"description\": \"View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN\",\n            \"url\": \"http://us.cnn.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"cnn-es\",\n            \"name\": \"CNN Spanish\",\n            \"description\": \"Lee las últimas noticias e información sobre Latinoamérica, Estados Unidos, mundo, entretenimiento, política, salud, tecnología y deportes en CNNEspañol.com.\",\n            \"url\": \"http://cnnespanol.cnn.com/\",\n            \"category\": \"general\",\n            \"language\": \"es\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"crypto-coins-news\",\n            \"name\": \"Crypto Coins News\",\n            \"description\": \"Providing breaking cryptocurrency news - focusing on Bitcoin, Ethereum, ICOs, blockchain technology, and smart contracts.\",\n            \"url\": \"https://www.ccn.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"der-tagesspiegel\",\n            \"name\": \"Der Tagesspiegel\",\n            \"description\": \"Nachrichten, News und neueste Meldungen aus dem Inland und dem Ausland - aktuell präsentiert von tagesspiegel.de.\",\n            \"url\": \"http://www.tagesspiegel.de\",\n            \"category\": \"general\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"die-zeit\",\n            \"name\": \"Die Zeit\",\n            \"description\": \"Aktuelle Nachrichten, Kommentare, Analysen und Hintergrundberichte aus Politik, Wirtschaft, Gesellschaft, Wissen, Kultur und Sport lesen Sie auf ZEIT ONLINE.\",\n            \"url\": \"http://www.zeit.de/index\",\n            \"category\": \"business\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"el-mundo\",\n            \"name\": \"El Mundo\",\n            \"description\": \"Noticias, actualidad, álbumes, debates, sociedad, servicios, entretenimiento y última hora en España y el mundo.\",\n            \"url\": \"http://www.elmundo.es\",\n            \"category\": \"general\",\n            \"language\": \"es\",\n            \"country\": \"es\"\n        },\n        {\n            \"id\": \"engadget\",\n            \"name\": \"Engadget\",\n            \"description\": \"Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics.\",\n            \"url\": \"https://www.engadget.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"entertainment-weekly\",\n            \"name\": \"Entertainment Weekly\",\n            \"description\": \"Online version of the print magazine includes entertainment news, interviews, reviews of music, film, TV and books, and a special area for magazine subscribers.\",\n            \"url\": \"http://www.ew.com\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"espn\",\n            \"name\": \"ESPN\",\n            \"description\": \"ESPN has up-to-the-minute sports news coverage, scores, highlights and commentary for NFL, MLB, NBA, College Football, NCAA Basketball and more.\",\n            \"url\": \"https://www.espn.com\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"espn-cric-info\",\n            \"name\": \"ESPN Cric Info\",\n            \"description\": \"ESPN Cricinfo provides the most comprehensive cricket coverage available including live ball-by-ball commentary, news, unparalleled statistics, quality editorial comment and analysis.\",\n            \"url\": \"http://www.espncricinfo.com/\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"financial-post\",\n            \"name\": \"Financial Post\",\n            \"description\": \"Find the latest happenings in the Canadian Financial Sector and stay up to date with changing trends in Business Markets. Read trading and investing advice from professionals.\",\n            \"url\": \"http://business.financialpost.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"ca\"\n        },\n        {\n            \"id\": \"focus\",\n            \"name\": \"Focus\",\n            \"description\": \"Minutenaktuelle Nachrichten und Service-Informationen von Deutschlands modernem Nachrichtenmagazin.\",\n            \"url\": \"http://www.focus.de\",\n            \"category\": \"general\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"football-italia\",\n            \"name\": \"Football Italia\",\n            \"description\": \"Italian football news, analysis, fixtures and results for the latest from Serie A, Serie B and the Azzurri.\",\n            \"url\": \"http://www.football-italia.net\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"it\"\n        },\n        {\n            \"id\": \"fortune\",\n            \"name\": \"Fortune\",\n            \"description\": \"Fortune 500 Daily and Breaking Business News\",\n            \"url\": \"http://fortune.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"four-four-two\",\n            \"name\": \"FourFourTwo\",\n            \"description\": \"The latest football news, in-depth features, tactical and statistical analysis from FourFourTwo, the UK&#039;s favourite football monthly.\",\n            \"url\": \"http://www.fourfourtwo.com/news\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"fox-news\",\n            \"name\": \"Fox News\",\n            \"description\": \"Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.\",\n            \"url\": \"http://www.foxnews.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"fox-sports\",\n            \"name\": \"Fox Sports\",\n            \"description\": \"Find live scores, player and team news, videos, rumors, stats, standings, schedules and fantasy games on FOX Sports.\",\n            \"url\": \"http://www.foxsports.com\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"globo\",\n            \"name\": \"Globo\",\n            \"description\": \"Só na globo.com você encontra tudo sobre o conteúdo e marcas do Grupo Globo. O melhor acervo de vídeos online sobre entretenimento, esportes e jornalismo do Brasil.\",\n            \"url\": \"http://www.globo.com/\",\n            \"category\": \"general\",\n            \"language\": \"pt\",\n            \"country\": \"br\"\n        },\n        {\n            \"id\": \"google-news\",\n            \"name\": \"Google News\",\n            \"description\": \"Comprehensive, up-to-date news coverage, aggregated from sources all over the world by Google News.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"google-news-ar\",\n            \"name\": \"Google News (Argentina)\",\n            \"description\": \"Completa cobertura actualizada de noticias agregadas a partir de fuentes de todo el mundo por Google Noticias.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"es\",\n            \"country\": \"ar\"\n        },\n        {\n            \"id\": \"google-news-au\",\n            \"name\": \"Google News (Australia)\",\n            \"description\": \"Comprehensive, up-to-date Australia news coverage, aggregated from sources all over the world by Google News.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"au\"\n        },\n        {\n            \"id\": \"google-news-br\",\n            \"name\": \"Google News (Brasil)\",\n            \"description\": \"Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"pt\",\n            \"country\": \"br\"\n        },\n        {\n            \"id\": \"google-news-ca\",\n            \"name\": \"Google News (Canada)\",\n            \"description\": \"Comprehensive, up-to-date Canada news coverage, aggregated from sources all over the world by Google News.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"ca\"\n        },\n        {\n            \"id\": \"google-news-fr\",\n            \"name\": \"Google News (France)\",\n            \"description\": \"Informations complètes et à jour, compilées par Google Actualités à partir de sources d&#39;actualités du monde entier.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"fr\",\n            \"country\": \"fr\"\n        },\n        {\n            \"id\": \"google-news-in\",\n            \"name\": \"Google News (India)\",\n            \"description\": \"Comprehensive, up-to-date India news coverage, aggregated from sources all over the world by Google News.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"in\"\n        },\n        {\n            \"id\": \"google-news-is\",\n            \"name\": \"Google News (Israel)\",\n            \"description\": \"כיסוי מקיף ועדכני של חדשות שהצטברו ממקורות בכל העולם על ידי &#39;חדשות Google&#39;.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"he\",\n            \"country\": \"is\"\n        },\n        {\n            \"id\": \"google-news-it\",\n            \"name\": \"Google News (Italy)\",\n            \"description\": \"Copertura giornalistica completa e aggiornata ottenuta combinando fonti di notizie in tutto il mondo attraverso Google News.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"it\",\n            \"country\": \"it\"\n        },\n        {\n            \"id\": \"google-news-ru\",\n            \"name\": \"Google News (Russia)\",\n            \"description\": \"Исчерпывающая и актуальная информация, собранная службой &quot;Новости Google&quot; со всего света.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"ru\",\n            \"country\": \"ru\"\n        },\n        {\n            \"id\": \"google-news-sa\",\n            \"name\": \"Google News (Saudi Arabia)\",\n            \"description\": \"تغطية شاملة ومتجددة للأخبار، تم جمعها من مصادر أخبار من جميع أنحاء العالم بواسطة أخبار Google.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"ar\",\n            \"country\": \"sa\"\n        },\n        {\n            \"id\": \"google-news-uk\",\n            \"name\": \"Google News (UK)\",\n            \"description\": \"Comprehensive, up-to-date UK news coverage, aggregated from sources all over the world by Google News.\",\n            \"url\": \"https://news.google.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"goteborgs-posten\",\n            \"name\": \"Göteborgs-Posten\",\n            \"description\": \"Göteborgs-Posten, abbreviated GP, is a major Swedish language daily newspaper published in Gothenburg, Sweden.\",\n            \"url\": \"http://www.gp.se\",\n            \"category\": \"general\",\n            \"language\": \"sv\",\n            \"country\": \"se\"\n        },\n        {\n            \"id\": \"gruenderszene\",\n            \"name\": \"Gruenderszene\",\n            \"description\": \"Online-Magazin für Startups und die digitale Wirtschaft. News und Hintergründe zu Investment, VC und Gründungen.\",\n            \"url\": \"http://www.gruenderszene.de\",\n            \"category\": \"technology\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"hacker-news\",\n            \"name\": \"Hacker News\",\n            \"description\": \"Hacker News is a social news website focusing on computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator. In general, content that can be submitted is defined as \\\"anything that gratifies one's intellectual curiosity\\\".\",\n            \"url\": \"https://news.ycombinator.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"handelsblatt\",\n            \"name\": \"Handelsblatt\",\n            \"description\": \"Auf Handelsblatt lesen sie Nachrichten über Unternehmen, Finanzen, Politik und Technik. Verwalten Sie Ihre Finanzanlagen mit Hilfe unserer Börsenkurse.\",\n            \"url\": \"http://www.handelsblatt.com\",\n            \"category\": \"business\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"ign\",\n            \"name\": \"IGN\",\n            \"description\": \"IGN is your site for Xbox One, PS4, PC, Wii-U, Xbox 360, PS3, Wii, 3DS, PS Vita and iPhone games with expert reviews, news, previews, trailers, cheat codes, wiki guides and walkthroughs.\",\n            \"url\": \"http://www.ign.com\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"il-sole-24-ore\",\n            \"name\": \"Il Sole 24 Ore\",\n            \"description\": \"Notizie di economia, cronaca italiana ed estera, quotazioni borsa in tempo reale e di finanza, norme e tributi, fondi e obbligazioni, mutui, prestiti e lavoro a cura de Il Sole 24 Ore.\",\n            \"url\": \"https://www.ilsole24ore.com\",\n            \"category\": \"business\",\n            \"language\": \"it\",\n            \"country\": \"it\"\n        },\n        {\n            \"id\": \"independent\",\n            \"name\": \"Independent\",\n            \"description\": \"National morning quality (tabloid) includes free online access to news and supplements. Insight by Robert Fisk and various other columnists.\",\n            \"url\": \"http://www.independent.co.uk\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"infobae\",\n            \"name\": \"Infobae\",\n            \"description\": \"Noticias de Argentina y del mundo en tiempo real. Información, videos y fotos sobre los hechos más relevantes y sus protagonistas. Léelo antes en infobae.\",\n            \"url\": \"http://www.infobae.com/?noredirect\",\n            \"category\": \"general\",\n            \"language\": \"es\",\n            \"country\": \"ar\"\n        },\n        {\n            \"id\": \"info-money\",\n            \"name\": \"InfoMoney\",\n            \"description\": \"No InfoMoney você encontra tudo o que precisa sobre dinheiro. Ações, investimentos, bolsas de valores e muito mais. Aqui você encontra informação que vale dinheiro!\",\n            \"url\": \"https://www.infomoney.com.br\",\n            \"category\": \"business\",\n            \"language\": \"pt\",\n            \"country\": \"br\"\n        },\n        {\n            \"id\": \"la-gaceta\",\n            \"name\": \"La Gaceta\",\n            \"description\": \"El diario de Tucumán, noticias 24 horas online - San Miguel de Tucumán - Argentina - Ultimo momento - Ultimas noticias.\",\n            \"url\": \"http://www.lagaceta.com.ar\",\n            \"category\": \"general\",\n            \"language\": \"es\",\n            \"country\": \"ar\"\n        },\n        {\n            \"id\": \"la-nacion\",\n            \"name\": \"La Nacion\",\n            \"description\": \"Información confiable en Internet. Noticias de Argentina y del mundo - ¡Informate ya!\",\n            \"url\": \"http://www.lanacion.com.ar\",\n            \"category\": \"general\",\n            \"language\": \"es\",\n            \"country\": \"ar\"\n        },\n        {\n            \"id\": \"la-repubblica\",\n            \"name\": \"La Repubblica\",\n            \"description\": \"Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.\",\n            \"url\": \"http://www.repubblica.it\",\n            \"category\": \"general\",\n            \"language\": \"it\",\n            \"country\": \"it\"\n        },\n        {\n            \"id\": \"le-monde\",\n            \"name\": \"Le Monde\",\n            \"description\": \"Les articles du journal et toute l'actualit&eacute; en continu : International, France, Soci&eacute;t&eacute;, Economie, Culture, Environnement, Blogs ...\",\n            \"url\": \"http://www.lemonde.fr\",\n            \"category\": \"general\",\n            \"language\": \"fr\",\n            \"country\": \"fr\"\n        },\n        {\n            \"id\": \"lenta\",\n            \"name\": \"Lenta\",\n            \"description\": \"Новости, статьи, фотографии, видео. Семь дней в неделю, 24 часа в сутки.\",\n            \"url\": \"https://lenta.ru\",\n            \"category\": \"general\",\n            \"language\": \"ru\",\n            \"country\": \"ru\"\n        },\n        {\n            \"id\": \"lequipe\",\n            \"name\": \"L'equipe\",\n            \"description\": \"Le sport en direct sur L'EQUIPE.fr. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à regarder et à partager !\",\n            \"url\": \"https://www.lequipe.fr\",\n            \"category\": \"sports\",\n            \"language\": \"fr\",\n            \"country\": \"fr\"\n        },\n        {\n            \"id\": \"les-echos\",\n            \"name\": \"Les Echos\",\n            \"description\": \"Toute l'actualité économique, financière et boursière française et internationale sur Les Echos.fr\",\n            \"url\": \"https://www.lesechos.fr\",\n            \"category\": \"business\",\n            \"language\": \"fr\",\n            \"country\": \"fr\"\n        },\n        {\n            \"id\": \"liberation\",\n            \"name\": \"Libération\",\n            \"description\": \"Toute l'actualité en direct - photos et vidéos avec Libération\",\n            \"url\": \"http://www.liberation.fr\",\n            \"category\": \"general\",\n            \"language\": \"fr\",\n            \"country\": \"fr\"\n        },\n        {\n            \"id\": \"marca\",\n            \"name\": \"Marca\",\n            \"description\": \"La mejor información deportiva en castellano actualizada minuto a minuto en noticias, vídeos, fotos, retransmisiones y resultados en directo.\",\n            \"url\": \"http://www.marca.com\",\n            \"category\": \"sports\",\n            \"language\": \"es\",\n            \"country\": \"es\"\n        },\n        {\n            \"id\": \"mashable\",\n            \"name\": \"Mashable\",\n            \"description\": \"Mashable is a global, multi-platform media and entertainment company.\",\n            \"url\": \"https://mashable.com\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"medical-news-today\",\n            \"name\": \"Medical News Today\",\n            \"description\": \"Medical news and health news headlines posted throughout the day, every day.\",\n            \"url\": \"http://www.medicalnewstoday.com\",\n            \"category\": \"health\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"msnbc\",\n            \"name\": \"MSNBC\",\n            \"description\": \"Breaking news and in-depth analysis of the headlines, as well as commentary and informed perspectives from The Rachel Maddow Show, Morning Joe & more.\",\n            \"url\": \"http://www.msnbc.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"mtv-news\",\n            \"name\": \"MTV News\",\n            \"description\": \"The ultimate news source for music, celebrity, entertainment, movies, and current events on the web. It's pop culture on steroids.\",\n            \"url\": \"http://www.mtv.com/news\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"mtv-news-uk\",\n            \"name\": \"MTV News (UK)\",\n            \"description\": \"All the latest celebrity news, gossip, exclusive interviews and pictures from the world of music and entertainment.\",\n            \"url\": \"http://www.mtv.co.uk/news\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"national-geographic\",\n            \"name\": \"National Geographic\",\n            \"description\": \"Reporting our world daily: original nature and science news from National Geographic.\",\n            \"url\": \"http://news.nationalgeographic.com\",\n            \"category\": \"science\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"national-review\",\n            \"name\": \"National Review\",\n            \"description\": \"National Review: Conservative News, Opinion, Politics, Policy, & Current Events.\",\n            \"url\": \"https://www.nationalreview.com/\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"nbc-news\",\n            \"name\": \"NBC News\",\n            \"description\": \"Breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.\",\n            \"url\": \"http://www.nbcnews.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"news24\",\n            \"name\": \"News24\",\n            \"description\": \"South Africa's premier news source, provides breaking news on national, world, Africa, sport, entertainment, technology and more.\",\n            \"url\": \"http://www.news24.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"za\"\n        },\n        {\n            \"id\": \"new-scientist\",\n            \"name\": \"New Scientist\",\n            \"description\": \"Breaking science and technology news from around the world. Exclusive stories and expert analysis on space, technology, health, physics, life and Earth.\",\n            \"url\": \"https://www.newscientist.com/section/news\",\n            \"category\": \"science\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"news-com-au\",\n            \"name\": \"News.com.au\",\n            \"description\": \"We say what people are thinking and cover the issues that get people talking balancing Australian and global moments — from politics to pop culture.\",\n            \"url\": \"http://www.news.com.au\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"au\"\n        },\n        {\n            \"id\": \"newsweek\",\n            \"name\": \"Newsweek\",\n            \"description\": \"Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.\",\n            \"url\": \"https://www.newsweek.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"new-york-magazine\",\n            \"name\": \"New York Magazine\",\n            \"description\": \"NYMAG and New York magazine cover the new, the undiscovered, the next in politics, culture, food, fashion, and behavior nationally, through a New York lens.\",\n            \"url\": \"http://nymag.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"next-big-future\",\n            \"name\": \"Next Big Future\",\n            \"description\": \"Coverage of science and technology that have the potential for disruption, and analysis of plans, policies, and technology that enable radical improvement.\",\n            \"url\": \"https://www.nextbigfuture.com\",\n            \"category\": \"science\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"nfl-news\",\n            \"name\": \"NFL News\",\n            \"description\": \"The official source for NFL news, schedules, stats, scores and more.\",\n            \"url\": \"http://www.nfl.com/news\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"nhl-news\",\n            \"name\": \"NHL News\",\n            \"description\": \"The most up-to-date breaking hockey news from the official source including interviews, rumors, statistics and schedules.\",\n            \"url\": \"https://www.nhl.com/news\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"nrk\",\n            \"name\": \"NRK\",\n            \"description\": \"NRK er Norges største tilbud på nett: nyheter fra Norge og verden, lokalnyheter, radio- og tv-program, podcast, vær, helse-, kultur-, underholdning-, humor- og debattstoff.\",\n            \"url\": \"https://www.nrk.no\",\n            \"category\": \"general\",\n            \"language\": \"no\",\n            \"country\": \"no\"\n        },\n        {\n            \"id\": \"politico\",\n            \"name\": \"Politico\",\n            \"description\": \"Political news about Congress, the White House, campaigns, lobbyists and issues.\",\n            \"url\": \"https://www.politico.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"polygon\",\n            \"name\": \"Polygon\",\n            \"description\": \"Polygon is a gaming website in partnership with Vox Media. Our culture focused site covers games, their creators, the fans, trending stories and entertainment news.\",\n            \"url\": \"http://www.polygon.com\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"rbc\",\n            \"name\": \"RBC\",\n            \"description\": \"Главные новости политики, экономики и бизнеса, комментарии аналитиков, финансовые данные с российских и мировых биржевых систем на сайте rbc.ru.\",\n            \"url\": \"https://www.rbc.ru\",\n            \"category\": \"general\",\n            \"language\": \"ru\",\n            \"country\": \"ru\"\n        },\n        {\n            \"id\": \"recode\",\n            \"name\": \"Recode\",\n            \"description\": \"Get the latest independent tech news, reviews and analysis from Recode with the most informed and respected journalists in technology and media.\",\n            \"url\": \"http://www.recode.net\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"reddit-r-all\",\n            \"name\": \"Reddit /r/all\",\n            \"description\": \"Reddit is an entertainment, social news networking service, and news website. Reddit's registered community members can submit content, such as text posts or direct links.\",\n            \"url\": \"https://www.reddit.com/r/all\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"reuters\",\n            \"name\": \"Reuters\",\n            \"description\": \"Reuters.com brings you the latest news from around the world, covering breaking news in business, politics, entertainment, technology, video and pictures.\",\n            \"url\": \"http://www.reuters.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"rt\",\n            \"name\": \"RT\",\n            \"description\": \"Актуальная картина дня на RT: круглосуточное ежедневное обновление новостей политики, бизнеса, финансов, спорта, науки, культуры. Онлайн-репортажи с места событий. Комментарии экспертов, актуальные интервью, фото и видео репортажи.\",\n            \"url\": \"https://russian.rt.com\",\n            \"category\": \"general\",\n            \"language\": \"ru\",\n            \"country\": \"ru\"\n        },\n        {\n            \"id\": \"rte\",\n            \"name\": \"RTE\",\n            \"description\": \"Get all of the latest breaking local and international news stories as they happen, with up to the minute updates and analysis, from Ireland's National Broadcaster.\",\n            \"url\": \"https://www.rte.ie/news\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"ie\"\n        },\n        {\n            \"id\": \"rtl-nieuws\",\n            \"name\": \"RTL Nieuws\",\n            \"description\": \"Volg het nieuws terwijl het gebeurt. RTL Nieuws informeert haar lezers op een onafhankelijke, boeiende en toegankelijke wijze over belangrijke ontwikkelingen in eigen land en de rest van de wereld.\",\n            \"url\": \"https://www.rtlnieuws.nl/\",\n            \"category\": \"general\",\n            \"language\": \"nl\",\n            \"country\": \"nl\"\n        },\n        {\n            \"id\": \"sabq\",\n            \"name\": \"SABQ\",\n            \"description\": \"صحيفة الكترونية سعودية هدفها السبق في نقل الحدث بمهنية ومصداقية خدمة للوطن والمواطن.\",\n            \"url\": \"https://sabq.org\",\n            \"category\": \"general\",\n            \"language\": \"ar\",\n            \"country\": \"sa\"\n        },\n        {\n            \"id\": \"spiegel-online\",\n            \"name\": \"Spiegel Online\",\n            \"description\": \"Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.\",\n            \"url\": \"http://www.spiegel.de\",\n            \"category\": \"general\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"svenska-dagbladet\",\n            \"name\": \"Svenska Dagbladet\",\n            \"description\": \"Sveriges ledande mediesajt - SvD.se. Svenska Dagbladets nyhetssajt låter läsarna ta plats och fördjupar nyheterna.\",\n            \"url\": \"https://www.svd.se\",\n            \"category\": \"general\",\n            \"language\": \"sv\",\n            \"country\": \"se\"\n        },\n        {\n            \"id\": \"t3n\",\n            \"name\": \"T3n\",\n            \"description\": \"Das Online-Magazin bietet Artikel zu den Themen E-Business, Social Media, Startups und Webdesign.\",\n            \"url\": \"https://t3n.de\",\n            \"category\": \"technology\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"talksport\",\n            \"name\": \"TalkSport\",\n            \"description\": \"Tune in to the world's biggest sports radio station - Live Premier League football coverage, breaking sports news, transfer rumours &amp; exclusive interviews.\",\n            \"url\": \"http://talksport.com\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"techcrunch\",\n            \"name\": \"TechCrunch\",\n            \"description\": \"TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news.\",\n            \"url\": \"https://techcrunch.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"techcrunch-cn\",\n            \"name\": \"TechCrunch (CN)\",\n            \"description\": \"TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news.\",\n            \"url\": \"https://techcrunch.cn\",\n            \"category\": \"technology\",\n            \"language\": \"zh\",\n            \"country\": \"zh\"\n        },\n        {\n            \"id\": \"techradar\",\n            \"name\": \"TechRadar\",\n            \"description\": \"The latest technology news and reviews, covering computing, home entertainment systems, gadgets and more.\",\n            \"url\": \"http://www.techradar.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-american-conservative\",\n            \"name\": \"The American Conservative\",\n            \"description\": \"Realism and reform. A new voice for a new generation of conservatives.\",\n            \"url\": \"http://www.theamericanconservative.com/\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-globe-and-mail\",\n            \"name\": \"The Globe And Mail\",\n            \"description\": \"The Globe and Mail offers the most authoritative news in Canada, featuring national and international news.\",\n            \"url\": \"https://www.theglobeandmail.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"ca\"\n        },\n        {\n            \"id\": \"the-hill\",\n            \"name\": \"The Hill\",\n            \"description\": \"The Hill is a top US political website, read by the White House and more lawmakers than any other site -- vital for policy, politics and election campaigns.\",\n            \"url\": \"http://thehill.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-hindu\",\n            \"name\": \"The Hindu\",\n            \"description\": \"The Hindu. latest news, analysis, comment, in-depth coverage of politics, business, sport, environment, cinema and arts from India's national newspaper.\",\n            \"url\": \"http://www.thehindu.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"in\"\n        },\n        {\n            \"id\": \"the-huffington-post\",\n            \"name\": \"The Huffington Post\",\n            \"description\": \"The Huffington Post is a politically liberal American online news aggregator and blog that has both localized and international editions founded by Arianna Huffington, Kenneth Lerer, Andrew Breitbart, and Jonah Peretti, featuring columnists.\",\n            \"url\": \"http://www.huffingtonpost.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-irish-times\",\n            \"name\": \"The Irish Times\",\n            \"description\": \"The Irish Times online. Latest news including sport, analysis, business, weather and more from the definitive brand of quality news in Ireland.\",\n            \"url\": \"https://www.irishtimes.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"ie\"\n        },\n        {\n            \"id\": \"the-jerusalem-post\",\n            \"name\": \"The Jerusalem Post\",\n            \"description\": \"The Jerusalem Post is the leading online newspaper for English speaking Jewry since 1932, bringing news and updates from the Middle East and all over the Jewish world.\",\n            \"url\": \"https://www.jpost.com/\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"is\"\n        },\n        {\n            \"id\": \"the-lad-bible\",\n            \"name\": \"The Lad Bible\",\n            \"description\": \"The LAD Bible is one of the largest community for guys aged 16-30 in the world. Send us your funniest pictures and videos!\",\n            \"url\": \"https://www.theladbible.com\",\n            \"category\": \"entertainment\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"the-next-web\",\n            \"name\": \"The Next Web\",\n            \"description\": \"The Next Web is one of the world’s largest online publications that delivers an international perspective on the latest news about Internet technology, business and culture.\",\n            \"url\": \"http://thenextweb.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-sport-bible\",\n            \"name\": \"The Sport Bible\",\n            \"description\": \"TheSPORTbible is one of the largest communities for sports fans across the world. Send us your sporting pictures and videos!\",\n            \"url\": \"https://www.thesportbible.com\",\n            \"category\": \"sports\",\n            \"language\": \"en\",\n            \"country\": \"gb\"\n        },\n        {\n            \"id\": \"the-times-of-india\",\n            \"name\": \"The Times of India\",\n            \"description\": \"Times of India brings the Latest News and Top Breaking headlines on Politics and Current Affairs in India and around the World, Sports, Business, Bollywood News and Entertainment, Science, Technology, Health and Fitness news, Cricket and opinions from leading columnists.\",\n            \"url\": \"http://timesofindia.indiatimes.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"in\"\n        },\n        {\n            \"id\": \"the-verge\",\n            \"name\": \"The Verge\",\n            \"description\": \"The Verge covers the intersection of technology, science, art, and culture.\",\n            \"url\": \"http://www.theverge.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-wall-street-journal\",\n            \"name\": \"The Wall Street Journal\",\n            \"description\": \"WSJ online coverage of breaking news and current headlines from the US and around the world. Top stories, photos, videos, detailed analysis and in-depth reporting.\",\n            \"url\": \"http://www.wsj.com\",\n            \"category\": \"business\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-washington-post\",\n            \"name\": \"The Washington Post\",\n            \"description\": \"Breaking news and analysis on politics, business, world national news, entertainment more. In-depth DC, Virginia, Maryland news coverage including traffic, weather, crime, education, restaurant reviews and more.\",\n            \"url\": \"https://www.washingtonpost.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"the-washington-times\",\n            \"name\": \"The Washington Times\",\n            \"description\": \"The Washington Times delivers breaking news and commentary on the issues that affect the future of our nation.\",\n            \"url\": \"https://www.washingtontimes.com/\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"time\",\n            \"name\": \"Time\",\n            \"description\": \"Breaking news and analysis from TIME.com. Politics, world news, photos, video, tech reviews, health, science and entertainment news.\",\n            \"url\": \"http://time.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"usa-today\",\n            \"name\": \"USA Today\",\n            \"description\": \"Get the latest national, international, and political news at USATODAY.com.\",\n            \"url\": \"http://www.usatoday.com/news\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"vice-news\",\n            \"name\": \"Vice News\",\n            \"description\": \"Vice News is Vice Media, Inc.'s current affairs channel, producing daily documentary essays and video through its website and YouTube channel. It promotes itself on its coverage of \\\"under - reported stories\\\".\",\n            \"url\": \"https://news.vice.com\",\n            \"category\": \"general\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"wired\",\n            \"name\": \"Wired\",\n            \"description\": \"Wired is a monthly American magazine, published in print and online editions, that focuses on how emerging technologies affect culture, the economy, and politics.\",\n            \"url\": \"https://www.wired.com\",\n            \"category\": \"technology\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"wired-de\",\n            \"name\": \"Wired.de\",\n            \"description\": \"Wired reports on how emerging technologies affect culture, the economy and politics.\",\n            \"url\": \"https://www.wired.de\",\n            \"category\": \"technology\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"wirtschafts-woche\",\n            \"name\": \"Wirtschafts Woche\",\n            \"description\": \"Das Online-Portal des führenden Wirtschaftsmagazins in Deutschland. Das Entscheidende zu Unternehmen, Finanzen, Erfolg und Technik.\",\n            \"url\": \"http://www.wiwo.de\",\n            \"category\": \"business\",\n            \"language\": \"de\",\n            \"country\": \"de\"\n        },\n        {\n            \"id\": \"xinhua-net\",\n            \"name\": \"Xinhua Net\",\n            \"description\": \"中国主要重点新闻网站,依托新华社遍布全球的采编网络,记者遍布世界100多个国家和地区,地方频道分布全国31个省市自治区,每天24小时同时使用6种语言滚动发稿,权威、准确、及时播发国内外重要新闻和重大突发事件,受众覆盖200多个国家和地区,发展论坛是全球知名的中文论坛。\",\n            \"url\": \"http://xinhuanet.com/\",\n            \"category\": \"general\",\n            \"language\": \"zh\",\n            \"country\": \"zh\"\n        },\n        {\n            \"id\": \"ynet\",\n            \"name\": \"Ynet\",\n            \"description\": \"ynet דף הבית: אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל מה שקורה וכל מה שמעניין ב ynet.\",\n            \"url\": \"http://www.ynet.co.il\",\n            \"category\": \"general\",\n            \"language\": \"he\",\n            \"country\": \"is\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "NeswAPI-byCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines/sources?category=science&language=en&apiKey={{API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines",
+						"sources"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "science"
+						},
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "apiKey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "respons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines/sources?category=science&language=en&apiKey={{API_KEY}}",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines",
+								"sources"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "science"
+								},
+								{
+									"key": "language",
+									"value": "en"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{API_KEY}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 16:14:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Cached-Result",
+							"value": "false"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=nr2E%2FnkhO6hmDTzMfrhsJiOJuLJQ6ieelP2j1YmQ18LpKKYbgEY7F2Ld0OF90E2yXz9a2YxSSqq%2Ft%2Bv0wrGwUivuALrpAp%2FW6P8RlrlPzvhknn08WWE56%2BrDWn4o\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "81067a769d33406d-SIN"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"ok\",\n    \"sources\": [\n        {\n            \"id\": \"national-geographic\",\n            \"name\": \"National Geographic\",\n            \"description\": \"Reporting our world daily: original nature and science news from National Geographic.\",\n            \"url\": \"http://news.nationalgeographic.com\",\n            \"category\": \"science\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"new-scientist\",\n            \"name\": \"New Scientist\",\n            \"description\": \"Breaking science and technology news from around the world. Exclusive stories and expert analysis on space, technology, health, physics, life and Earth.\",\n            \"url\": \"https://www.newscientist.com/section/news\",\n            \"category\": \"science\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        },\n        {\n            \"id\": \"next-big-future\",\n            \"name\": \"Next Big Future\",\n            \"description\": \"Coverage of science and technology that have the potential for disruption, and analysis of plans, policies, and technology that enable radical improvement.\",\n            \"url\": \"https://www.nextbigfuture.com\",\n            \"category\": \"science\",\n            \"language\": \"en\",\n            \"country\": \"us\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
